@@ -1,4 +1,875 @@
-<!-- CERTIFICATES & PROFESSIONAL TRAINING SECTION -->
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheryl B. Masilang | Quantity Surveyor & Estimator</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#090d16',
+                            card: '#111827',
+                            border: '#1f2937',
+                            hover: '#374151',
+                            amber: '#f59e0b',
+                            amberDark: '#d97706',
+                            gold: '#fbbf24',
+                            cyan: '#0ea5e9'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Outfit', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090d16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1f2937;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #374151;
+        }
+
+        /* Glassmorphism background */
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.07);
+        }
+
+        .glass-card-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card-hover:hover {
+            border-color: rgba(245, 158, 11, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.1);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gold-border-glow {
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-200 font-sans antialiased selection:bg-brand-amber selection:text-slate-900 min-h-screen flex flex-col justify-between">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 glass-card border-b border-slate-800/80 bg-brand-dark/90 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo / Brand -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-brand-amber to-brand-amberDark flex items-center justify-center font-heading font-bold text-slate-900 text-xl shadow-lg shadow-brand-amber/20 group-hover:scale-105 transition-transform">
+                        SM
+                    </div>
+                    <div>
+                        <span class="font-heading font-bold text-lg tracking-wide text-white block leading-tight">Sheryl B. Masilang</span>
+                        <span class="text-xs text-brand-amber font-medium tracking-wider uppercase">Quantity Surveyor</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium">
+                    <a href="#about" class="px-3 py-2 rounded-md hover:text-brand-amber hover:bg-slate-800/50 transition">About</a>
+                    <a href="#track-record" class="px-3 py-2 rounded-md hover:text-brand-amber hover:bg-slate-800/50 transition">Track Record</a>
+                    <a href="#services" class="px-3 py-2 rounded-md hover:text-brand-amber hover:bg-slate-800/50 transition">Services</a>
+                    <a href="#projects" class="px-3 py-2 rounded-md hover:text-brand-amber hover:bg-slate-800/50 transition">Projects</a>
+                    <a href="#work-samples" class="px-3 py-2 rounded-md hover:text-brand-amber hover:bg-slate-800/50 transition">Work Samples</a>
+                    <a href="#tools" class="px-3 py-2 rounded-md hover:text-brand-amber hover:bg-slate-800/50 transition">Tools</a>
+                    <a href="#contact" class="ml-3 px-4 py-2 rounded-lg bg-brand-amber hover:bg-brand-gold text-slate-950 font-semibold transition shadow-md shadow-brand-amber/10 flex items-center gap-2">
+                        <i class="fa-solid fa-paper-plane text-xs"></i> Contact Me
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" type="button" class="md:hidden text-slate-300 hover:text-white p-2 focus:outline-none" aria-label="Toggle Navigation">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden glass-card border-t border-slate-800 px-4 pt-2 pb-6 space-y-2">
+            <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-slate-800/50">About</a>
+            <a href="#track-record" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-slate-800/50">Track Record</a>
+            <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-slate-800/50">Services</a>
+            <a href="#projects" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-slate-800/50">Projects</a>
+            <a href="#work-samples" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-slate-800/50">Work Samples</a>
+            <a href="#tools" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium hover:text-brand-amber hover:bg-slate-800/50">Tools</a>
+            <a href="#contact" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium bg-brand-amber text-slate-950 font-semibold text-center mt-4">Contact Me</a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- HERO SECTION -->
+        <section class="relative pt-12 pb-20 md:pt-20 md:pb-28 overflow-hidden">
+            <!-- Subtle Radial Gradient Backgrounds -->
+            <div class="absolute top-10 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-brand-amber/10 blur-[120px] rounded-full pointer-events-none"></div>
+            <div class="absolute top-1/3 left-10 w-[300px] h-[300px] bg-brand-cyan/10 blur-[100px] rounded-full pointer-events-none"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+                    
+                    <!-- Profile Picture Frame -->
+                    <div class="w-full lg:w-5/12 flex flex-col items-center">
+                        <div class="relative group">
+                            <!-- Outer Ambient Glow ring -->
+                            <div class="absolute -inset-1.5 bg-gradient-to-r from-brand-amber via-brand-gold to-brand-cyan rounded-full blur-md opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
+                            
+                            <!-- Image Container -->
+                            <div class="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-slate-900 bg-slate-800 flex items-center justify-center shadow-2xl">
+                                <img src="profile.png" 
+                                     alt="Sheryl B. Masilang" 
+                                     class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'flex flex-col items-center justify-center text-center p-6 text-slate-400\'><i class=\'fa-solid fa-user-gear text-6xl text-brand-amber mb-3\'></i><span class=\'font-bold text-lg text-white\'>Sheryl B. Masilang</span><span class=\'text-xs text-slate-400 mt-1\'>BS Civil Engineering</span></div>';">
+                            </div>
+
+                            <!-- Floating Badge -->
+                            <div class="absolute -bottom-2 right-2 sm:right-6 bg-slate-900/90 border border-brand-amber/40 backdrop-blur-md text-slate-100 px-4 py-2 rounded-xl text-xs font-semibold shadow-lg flex items-center gap-2">
+                                <span class="relative flex h-2.5 w-2.5">
+                                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                                </span>
+                                COSH SO2 Certified
+                            </div>
+                        </div>
+
+                        <!-- Status Tags -->
+                        <div class="mt-8 flex flex-wrap justify-center gap-3 text-xs sm:text-sm">
+                            <span class="glass-card px-4 py-2 rounded-full text-slate-300 flex items-center gap-2 border border-slate-800">
+                                <i class="fa-solid fa-location-dot text-brand-amber"></i> Lipa City, Batangas, PH
+                            </span>
+                            <span class="glass-card px-4 py-2 rounded-full text-emerald-400 flex items-center gap-2 border border-emerald-900/40 bg-emerald-950/20">
+                                <i class="fa-solid fa-circle-check text-xs"></i> Remote / Hybrid / On-site
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Hero Content -->
+                    <div class="w-full lg:w-7/12 text-center lg:text-left space-y-6">
+                        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-amber/10 border border-brand-amber/30 text-brand-amber text-xs font-semibold tracking-wide uppercase">
+                            <i class="fa-solid fa-hard-hat"></i> BS Civil Engineer & Quantity Surveyor
+                        </div>
+
+                        <h1 class="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                            Sheryl B. Masilang
+                        </h1>
+
+                        <p class="text-xl sm:text-2xl font-semibold gold-gradient-text tracking-wide">
+                            Quantity Surveyor | Estimator | Coordinator
+                        </p>
+
+                        <!-- Quote Banner -->
+                        <div class="p-5 sm:p-6 rounded-2xl glass-card border-l-4 border-l-brand-amber relative overflow-hidden my-6">
+                            <i class="fa-solid fa-quote-left text-brand-amber/20 text-4xl absolute -top-1 right-3 pointer-events-none"></i>
+                            <p class="italic text-slate-300 text-sm sm:text-base leading-relaxed relative z-10">
+                                "A Quantity Surveyor & Coordinator built on discipline, integrity, and absolute cost precision — keeping your projects profitable and on schedule."
+                            </p>
+                        </div>
+
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                            <a href="#work-samples" class="px-6 py-3.5 rounded-xl bg-brand-amber hover:bg-brand-gold text-slate-950 font-bold transition flex items-center gap-2 shadow-lg shadow-brand-amber/20 hover:scale-[1.02]">
+                                <i class="fa-solid fa-briefcase"></i> View Work Samples
+                            </a>
+                            <a href="#contact" class="px-6 py-3.5 rounded-xl glass-card hover:bg-slate-800 text-white font-semibold transition border border-slate-700 flex items-center gap-2">
+                                <i class="fa-solid fa-envelope"></i> Get In Touch
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- METRICS & TRACK RECORD SECTION -->
+        <section id="track-record" class="py-12 bg-slate-900/50 border-y border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-10">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-brand-amber mb-2">Key Performance Indicators</h2>
+                    <p class="font-heading text-2xl sm:text-3xl font-bold text-white">Proven Record in Quantity Take-0ff, Estimation & Cost Management</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 sm:gap-6">
+                    <!-- Metric Card 1 -->
+                    <div class="glass-card glass-card-hover p-5 rounded-2xl text-center flex flex-col justify-center items-center">
+                        <div class="w-12 h-12 rounded-xl bg-brand-amber/10 text-brand-amber flex items-center justify-center text-xl mb-3">
+                            <i class="fa-solid fa-calendar-check"></i>
+                        </div>
+                        <div class="font-heading font-extrabold text-2xl sm:text-3xl text-white mb-1">7+ Years</div>
+                        <p class="text-xs text-slate-400 font-medium">Field & QS Experience</p>
+                    </div>
+
+                    <!-- Metric Card 2 -->
+                    <div class="glass-card glass-card-hover p-5 rounded-2xl text-center flex flex-col justify-center items-center">
+                        <div class="w-12 h-12 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-xl mb-3">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="font-heading font-extrabold text-2xl sm:text-3xl text-white mb-1">$12M+</div>
+                        <p class="text-xs text-slate-400 font-medium">High-Rise Valuation</p>
+                    </div>
+
+                    <!-- Metric Card 3 -->
+                    <div class="glass-card glass-card-hover p-5 rounded-2xl text-center flex flex-col justify-center items-center">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-3">
+                            <i class="fa-solid fa-cubes-stacked"></i>
+                        </div>
+                        <div class="font-heading font-extrabold text-2xl sm:text-3xl text-white mb-1">50+</div>
+                        <p class="text-xs text-slate-400 font-medium">Steel & Pre-Con Packages</p>
+                    </div>
+
+                    <!-- Metric Card 4 -->
+                    <div class="glass-card glass-card-hover p-5 rounded-2xl text-center flex flex-col justify-center items-center">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-3">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div class="font-heading font-extrabold text-xl sm:text-2xl text-white mb-1">$100K–$300K</div>
+                        <p class="text-xs text-slate-400 font-medium">International Estimations</p>
+                    </div>
+
+                    <!-- Metric Card 5 -->
+                    <div class="glass-card glass-card-hover p-5 rounded-2xl text-center flex flex-col justify-center items-center col-span-2 md:col-span-1">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-brand-amber flex items-center justify-center text-xl mb-3">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <div class="font-heading font-extrabold text-lg sm:text-xl text-white mb-1">COSH SO2</div>
+                        <p class="text-xs text-slate-400 font-medium">Safety Officer Certified</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                    
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="inline-flex items-center gap-2 text-brand-amber font-semibold text-sm">
+                            <span class="w-8 h-0.5 bg-brand-amber"></span> ABOUT SHERYL
+                        </div>
+                        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                            Bridging Commercial Accuracy & Execution Precision
+                        </h2>
+                        <p class="text-slate-300 leading-relaxed text-sm sm:text-base">
+                            I am a <strong class="text-white">BS Civil Engineering graduate</strong> and <strong class="text-white">COSH Certified Safety Officer (SO2)</strong> with over 7 years of combined experience spanning engineering, quantity surveying, cost estimation, and structural steel coordination.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed text-sm">
+                            My career encompasses hands-on steel fabrication workflows, complete site QS operations on major high-rise projects, and international freelance estimations across Australasia and the Philippines.
+                        </p>
+
+                        <div class="p-4 rounded-xl bg-slate-900/80 border border-slate-800 space-y-2">
+                            <div class="text-xs text-brand-amber font-bold tracking-wider uppercase">Key Highlight</div>
+                            <p class="text-xs sm:text-sm text-slate-300">
+                                Evaluated contractor change orders leading to an <strong class="text-emerald-400">approximate 31% reduction</strong> from initial submissions while retaining complete specification alignment.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-7">
+                        <div class="glass-card p-6 sm:p-8 rounded-3xl border border-slate-800 space-y-6">
+                            <h3 class="font-heading text-xl font-bold text-white flex items-center gap-3">
+                                <i class="fa-solid fa-list-check text-brand-amber"></i> Complete Workflow Competence
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed">
+                                I provide detailed quantity take-offs, BOQ/BOM preparation, DUPA, structural steel measurement, progress billing & change-order evaluation, site audits, and construction documentation support using industry-leading software tools.
+                            </p>
+
+                            <!-- Tool Badges -->
+                            <div>
+                                <h4 class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Primary Tool Stack</h4>
+                                <div class="flex flex-wrap gap-2">
+                                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-medium border border-slate-700">PlanSwift</span>
+                                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-medium border border-slate-700">Bluebeam Revu</span>
+                                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-medium border border-slate-700">Glodon Cubicost (5D BIM)</span>
+                                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-medium border border-slate-700">AutoCAD</span>
+                                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-medium border border-slate-700">Revit</span>
+                                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-medium border border-slate-700">SketchUp</span>
+                                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-medium border border-slate-700">Primus Costing</span>
+                                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-medium border border-slate-700">Advanced MS Excel</span>
+                                    <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-medium border border-slate-700">Procore</span>
+                                </div>
+                            </div>
+
+                            <blockquote class="text-xs italic text-slate-400 border-l-2 border-brand-amber pl-4 pt-1">
+                                "I bridge the gap between commercial accuracy and proactive project execution by refining estimates, improving cost visibility, and supporting coordinated project workflows."
+                            </blockquote>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES PROVIDED SECTION -->
+        <section id="services" class="py-20 bg-slate-900/60 border-t border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-amber text-xs font-bold uppercase tracking-widest block mb-2">Core Offerings</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">What I Do & Deliver</h2>
+                    <p class="text-slate-400 text-sm mt-3">Comprehensive commercial, estimating, and site quantity surveying services tailored to project demands.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Service Card 1 -->
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-brand-amber/10 text-brand-amber flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-ruler-combined"></i>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-white mb-2">Quantity Take-Offs</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">Structural, architectural, civil, and basic MPFS digital quantity take-offs using PlanSwift and Bluebeam.</p>
+                        </div>
+                        <div class="text-xs text-brand-amber font-semibold pt-3 border-t border-slate-800">
+                            Key Deliverable: Digital QTO Sheets & Markup
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-file-invoice-dollar"></i>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-white mb-2">BOQ / BOM Preparation</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">Structured Bill of Quantities, Bill of Materials, and comprehensive pre-bid tender documentation.</p>
+                        </div>
+                        <div class="text-xs text-brand-cyan font-semibold pt-3 border-t border-slate-800">
+                            Key Deliverable: Tender Pre-Bid Documentation
+                        </div>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-calculator"></i>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-white mb-2">DUPA / Cost Estimation</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">Detailed Unit Price Analysis, labor/equipment rates, and precise line-item cost build-ups.</p>
+                        </div>
+                        <div class="text-xs text-emerald-400 font-semibold pt-3 border-t border-slate-800">
+                            Key Deliverable: Unit Rate Breakdown & Models
+                        </div>
+                    </div>
+
+                    <!-- Service Card 4 -->
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-cubes"></i>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-white mb-2">Structural Steel QS</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">Measurement of steel sections, decking, bolts, weld lengths, plates, and material weight schedules.</p>
+                        </div>
+                        <div class="text-xs text-purple-400 font-semibold pt-3 border-t border-slate-800">
+                            Key Deliverable: Steel Tonnage & Fastener Schedules
+                        </div>
+                    </div>
+
+                    <!-- Service Card 5 -->
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-scale-balanced"></i>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-white mb-2">Contract Admin</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">Evaluation of progress billing, site variations, and rigorous contractor change-order audits.</p>
+                        </div>
+                        <div class="text-xs text-rose-400 font-semibold pt-3 border-t border-slate-800">
+                            Key Deliverable: Billing Certifications & Audits
+                        </div>
+                    </div>
+
+                    <!-- Service Card 6 -->
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-diagram-project"></i>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-white mb-2">Project Coordination</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">Tracking Request for Approval (RFA), RFI responses, and Purchase Requisition status management.</p>
+                        </div>
+                        <div class="text-xs text-indigo-400 font-semibold pt-3 border-t border-slate-800">
+                            Key Deliverable: RFA/RFI Logs & Action Trackers
+                        </div>
+                    </div>
+
+                    <!-- Service Card 7 -->
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-yellow-500/10 text-yellow-400 flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-clipboard-check"></i>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-white mb-2">Site Audits</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">Physical material verification, on-site progress measuring against approved drawings and specifications.</p>
+                        </div>
+                        <div class="text-xs text-yellow-400 font-semibold pt-3 border-t border-slate-800">
+                            Key Deliverable: Verification Reports
+                        </div>
+                    </div>
+
+                    <!-- Service Card 8 -->
+                    <div class="glass-card glass-card-hover p-6 rounded-2xl flex flex-col justify-between">
+                        <div>
+                            <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center text-xl mb-4">
+                                <i class="fa-solid fa-layer-group"></i>
+                            </div>
+                            <h3 class="font-heading text-lg font-bold text-white mb-2">Bar Bending Schedules</h3>
+                            <p class="text-xs text-slate-400 leading-relaxed mb-4">Rebar schedules preparation (BBS), member dimensions, bar cut lengths, and weight cross-checking.</p>
+                        </div>
+                        <div class="text-xs text-teal-400 font-semibold pt-3 border-t border-slate-800">
+                            Key Deliverable: Standardized BBS Schedules
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- SELECTED PROJECTS SECTION -->
+        <section id="projects" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                    <div>
+                        <span class="text-brand-amber text-xs font-bold uppercase tracking-widest block mb-2">Featured Endeavors</span>
+                        <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">Selected Project Experience</h2>
+                    </div>
+                    <p class="text-slate-400 text-sm mt-2 md:mt-0 max-w-md">Key structural, commercial, and mixed-use developments handled across local and international sectors.</p>
+                </div>
+
+                <!-- Major High-Rise Feature -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-slate-800 mb-12">
+                    <div class="grid grid-cols-1 lg:grid-cols-12">
+                        <!-- Project Info -->
+                        <div class="p-8 lg:p-10 lg:col-span-7 flex flex-col justify-between">
+                            <div>
+                                <div class="flex flex-wrap items-center gap-3 mb-4">
+                                    <span class="px-3 py-1 rounded-md bg-brand-amber/20 text-brand-amber text-xs font-bold uppercase">Featured Landmark</span>
+                                    <span class="text-xs text-slate-400"><i class="fa-solid fa-tag text-brand-amber mr-1"></i> $12M USD Valuation</span>
+                                </div>
+
+                                <h3 class="font-heading text-2xl sm:text-3xl font-bold text-white mb-3">
+                                    21-Story Mixed-Use High-Rise Building
+                                </h3>
+                                <p class="text-slate-400 text-sm mb-6">
+                                    <strong class="text-slate-200">Role:</strong> Jr. Quantity Surveyor | <strong class="text-slate-200">Company:</strong> Italpinas Development Corp.
+                                </p>
+
+                                <h4 class="text-xs font-bold text-brand-amber uppercase tracking-wider mb-3">Scope & Responsibilities:</h4>
+                                <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300 mb-8">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-check text-brand-amber text-[10px] mt-1"></i>
+                                        <span>Full lifecycle site-level QS (pre-construction to handover)</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-check text-brand-amber text-[10px] mt-1"></i>
+                                        <span>Detailed quantity take-offs & BOQ/BOM preparation</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-check text-brand-amber text-[10px] mt-1"></i>
+                                        <span>Change-order evaluation and cost negotiations</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-check text-brand-amber text-[10px] mt-1"></i>
+                                        <span>Installed-material verification vs approved drawings</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-check text-brand-amber text-[10px] mt-1"></i>
+                                        <span>Contractor billing audits & progress certification</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-circle-check text-brand-amber text-[10px] mt-1"></i>
+                                        <span>Cross-departmental site coordination and documentation</span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pt-4 border-t border-slate-800 text-xs text-slate-400 flex items-center justify-between">
+                                <span><i class="fa-solid fa-location-dot text-brand-amber mr-1"></i> Philippines</span>
+                                <span>Complete Handover Support</span>
+                            </div>
+                        </div>
+
+                        <!-- Project Images Column -->
+                        <div class="lg:col-span-5 bg-slate-900/80 p-6 flex flex-col gap-4 justify-center border-t lg:border-t-0 lg:border-l border-slate-800">
+                            <!-- Image 1 -->
+                            <div class="relative rounded-2xl overflow-hidden border border-slate-800 group h-48 bg-slate-800">
+                                <img src="21-story-highrise.jpeg" 
+                                     alt="21-story mixed-use high-rise project" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-slate-800 text-slate-400 p-4 text-center\'><i class=\'fa-solid fa-building text-3xl text-brand-amber mb-2\'></i><span class=\'font-semibold text-xs text-white\'>21-Story Mixed-Use Project Rendering</span></div>';">
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 to-transparent p-3">
+                                    <span class="text-[11px] text-slate-300 font-medium"><i class="fa-solid fa-camera mr-1"></i> High-Rise Tower Scope</span>
+                                </div>
+                            </div>
+
+                            <!-- Image 2 -->
+                            <div class="relative rounded-2xl overflow-hidden border border-slate-800 group h-48 bg-slate-800">
+                                <img src="site-inspection.jpg" 
+                                     alt="Site inspection and project coordination" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                     onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-slate-800 text-slate-400 p-4 text-center\'><i class=\'fa-solid fa-clipboard-user text-3xl text-brand-cyan mb-2\'></i><span class=\'font-semibold text-xs text-white\'>Site Inspection & Verification Work</span></div>';">
+                                <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/90 to-transparent p-3">
+                                    <span class="text-[11px] text-slate-300 font-medium"><i class="fa-solid fa-camera mr-1"></i> On-Site Quantity Audit</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Projects Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    
+                    <!-- Secondary Project 1: New Zealand Warehouse -->
+<div class="glass-card rounded-2xl border border-slate-800 overflow-hidden flex flex-col justify-between">
+    <!-- Image Container -->
+    <div class="h-48 bg-slate-800 relative overflow-hidden border-b border-slate-800 group">
+        <img src="nz-warehouse.png" 
+             alt="New Zealand Warehouse Project" 
+             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+             onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-slate-800 text-slate-400 p-4 text-center\'><i class=\'fa-solid fa-warehouse text-3xl text-brand-cyan mb-2\'></i><span class=\'font-semibold text-xs text-white\'>New Zealand Warehouse Preview</span></div>';">
+    </div>
+
+    <!-- Content Area -->
+    <div class="p-6 flex flex-col justify-between flex-grow">
+        <div>
+            <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-1 rounded bg-brand-cyan/10 text-brand-cyan text-xs font-semibold">International Remote</span>
+                <span class="text-xs font-bold text-white">$200,000 USD Value</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">New Zealand Warehouse Project</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                Comprehensive structural steel and civil quantity take-off and Bill of Quantities preparation for a commercial warehouse facility in New Zealand.
+            </p>
+            <ul class="text-xs text-slate-400 space-y-1.5 mb-4">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-cyan text-[10px]"></i> International standard unit measurement</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-brand-cyan text-[10px]"></i> Structural steel frame & envelope BOM</li>
+            </ul>
+        </div>
+        <div class="text-xs text-slate-500 pt-3 border-t border-slate-800 flex items-center justify-between">
+            <span><i class="fa-solid fa-globe text-brand-cyan mr-1"></i> New Zealand</span>
+            <span class="text-slate-300 font-medium">Quantity Take-Off & BOQ</span>
+        </div>
+    </div>
+</div>
+<!-- Secondary Project 2: PH Four-Story Walk-Up Green Condo -->
+<div class="glass-card rounded-2xl border border-slate-800 overflow-hidden flex flex-col justify-between">
+    <!-- Image Container -->
+    <div class="h-48 bg-slate-800 relative overflow-hidden border-b border-slate-800 group">
+        <img src="ph-green-condo.png" 
+             alt="PH Four-Story Walk-Up Green Condo" 
+             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+             onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-slate-800 text-slate-400 p-4 text-center\'><i class=\'fa-solid fa-building-circle-check text-3xl text-emerald-400 mb-2\'></i><span class=\'font-semibold text-xs text-white\'>Green Condo Preview</span></div>';">
+    </div>
+
+    <!-- Content Area -->
+    <div class="p-6 flex flex-col justify-between flex-grow">
+        <div>
+            <div class="flex items-center justify-between mb-3">
+                <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 text-xs font-semibold">Multi-Building Complex</span>
+                <span class="text-xs font-bold text-white">$5,000,000 USD Value</span>
+            </div>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">PH Four-Story Walk-Up Green Condo</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                Full quantity take-off and BOQ documentation covering civil, structural, architectural, and finishing works across a 4-building eco-friendly residential development.
+            </p>
+            <ul class="text-xs text-slate-400 space-y-1.5 mb-4">
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-[10px]"></i> Full scope civil to architectural finishes</li>
+                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400 text-[10px]"></i> 4-Building consolidated BOQ breakdown</li>
+            </ul>
+        </div>
+        <div class="text-xs text-slate-500 pt-3 border-t border-slate-800 flex items-center justify-between">
+            <span><i class="fa-solid fa-location-dot text-emerald-400 mr-1"></i> Philippines</span>
+            <span class="text-slate-300 font-medium">Full Scope QS</span>
+        </div>
+    </div>
+</div>
+        </section>
+
+        <!-- WORK SAMPLES GALLERY SECTION -->
+        <section id="work-samples" class="py-20 bg-slate-900/60 border-t border-slate-800/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-amber text-xs font-bold uppercase tracking-widest block mb-2">Proof of Work</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">Work Samples & Artifacts</h2>
+                    <p class="text-slate-400 text-sm mt-3">Click on any sample to inspect the detailed measurement drawings, schedules, and calculations.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Sample Card 1 -->
+                    <div class="glass-card rounded-2xl border border-amber-500/30 overflow-hidden flex flex-col justify-between">
+    <!-- Image Container -->
+    <div class="h-48 bg-slate-800 relative overflow-hidden border-b border-slate-800 group cursor-pointer">
+        <img src="planswift-takeoff.png" 
+             alt="PlanSwift Take-Off Markup" 
+             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+             onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-slate-800 text-slate-400 p-4 text-center\'><i class=\'fa-solid fa-draw-polygon text-3xl text-amber-500 mb-2\'></i><span class=\'font-semibold text-xs text-white\'>PlanSwift Take-Off Markup</span><span class=\'text-[10px] text-slate-400 mt-1\'>Click to inspect scope</span></div>';">
+    </div>
+
+    <!-- Content Area -->
+    <div class="p-6 flex flex-col justify-between flex-grow">
+        <div>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">PlanSwift Quantity Take-Off & Mark-Up</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                Drawing-based take-off with digital markup and structural steel measurement workflow.
+            </p>
+        </div>
+        <div class="text-xs text-amber-500 pt-3 border-t border-slate-800 font-medium">
+            Software: PlanSwift Digital Measurement
+        </div>
+    </div>
+</div>
+
+<!-- Structural Steel Take-Off Card -->
+<div class="glass-card rounded-2xl border border-sky-500/30 overflow-hidden flex flex-col justify-between">
+    <!-- Image Container -->
+    <div class="h-48 bg-slate-800 relative overflow-hidden border-b border-slate-800 group cursor-pointer">
+        <img src="structural-steel-qto.png" 
+             alt="Structural Steel Schedule" 
+             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+             onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-slate-800 text-slate-400 p-4 text-center\'><i class=\'fa-solid fa-cubes text-3xl text-sky-400 mb-2\'></i><span class=\'font-semibold text-xs text-white\'>Structural Steel Schedule</span><span class=\'text-[10px] text-slate-400 mt-1\'>Click to inspect scope</span></div>';">
+    </div>
+
+    <!-- Content Area -->
+    <div class="p-6 flex flex-col justify-between flex-grow">
+        <div>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">Structural Steel Take-Off</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                Steel member identification, weight calculation, base plates, and structural summaries.
+            </p>
+        </div>
+        <div class="text-xs text-sky-400 pt-3 border-t border-slate-800 font-medium">
+            Focus: Weight Tonnage & Member Breakdown
+        </div>
+    </div>
+</div>
+
+<!-- Bill of Quantities (BOQ) & Bill of Materials (BOM) Card -->
+<div class="glass-card rounded-2xl border border-emerald-500/30 overflow-hidden flex flex-col justify-between">
+    <!-- Image Container -->
+    <div class="h-48 bg-slate-800 relative overflow-hidden border-b border-slate-800 group cursor-pointer">
+        <img src="boq-breakdown.png" 
+             alt="BOQ Breakdown Sheet" 
+             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+             onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-slate-800 text-slate-400 p-4 text-center\'><i class=\'fa-solid fa-table-cells text-3xl text-emerald-400 mb-2\'></i><span class=\'font-semibold text-xs text-white\'>BOQ Breakdown Sheet</span><span class=\'text-[10px] text-slate-400 mt-1\'>Click to inspect scope</span></div>';">
+    </div>
+
+    <!-- Content Area -->
+    <div class="p-6 flex flex-col justify-between flex-grow">
+        <div>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">Bill of Quantities (BOQ) & Bill of Materials (BOM)</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                Structured line-item quantity breakdowns, work-item organization, and rate models.
+            </p>
+        </div>
+        <div class="text-xs text-emerald-400 pt-3 border-t border-slate-800 font-medium">
+            Deliverable: Commercial Pre-Bid BOQ
+        </div>
+    </div>
+</div>
+
+<!-- Bar Bending Schedule (BBS) Card -->
+<div class="glass-card rounded-2xl border border-purple-500/30 overflow-hidden flex flex-col justify-between">
+    <!-- Image Container -->
+    <div class="h-48 bg-slate-800 relative overflow-hidden border-b border-slate-800 group cursor-pointer">
+        <img src="07_bbs.png" 
+             alt="Bar Bending Schedule (BBS)" 
+             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+             onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-slate-800 text-slate-400 p-4 text-center\'><i class=\'fa-solid fa-bars text-3xl text-purple-400 mb-2\'></i><span class=\'font-semibold text-xs text-white\'>Bar Bending Schedule (BBS)</span><span class=\'text-[10px] text-slate-400 mt-1\'>Click to inspect scope</span></div>';">
+    </div>
+
+    <!-- Content Area -->
+    <div class="p-6 flex flex-col justify-between flex-grow">
+        <div>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">Bar Bending Schedule (BBS)</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                Detailed rebar schedules, cut lengths, bar shapes, member matching, and steel tonnage.
+            </p>
+        </div>
+        <div class="text-xs text-purple-400 pt-3 border-t border-slate-800 font-medium">
+            Focus: Reinforcement Accuracy
+        </div>
+    </div>
+</div>
+<!-- Change Order Evaluation Card -->
+<div class="glass-card rounded-2xl border border-emerald-500/30 overflow-hidden flex flex-col justify-between relative">
+    <!-- Badge -->
+    <div class="absolute top-3 right-3 z-10">
+        <span class="px-2.5 py-1 rounded-full bg-emerald-500 text-slate-950 text-[10px] font-bold tracking-wider uppercase">31% SAVINGS</span>
+    </div>
+
+    <!-- Image Container -->
+    <div class="h-48 bg-slate-800 relative overflow-hidden border-b border-slate-800 group cursor-pointer">
+        <img src="08_change order.png" 
+             alt="Change Order Evaluation" 
+             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+             onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-slate-800 text-slate-400 p-4 text-center\'><i class=\'fa-solid fa-file-contract text-3xl text-emerald-400 mb-2\'></i><span class=\'font-semibold text-xs text-white\'>Change Order Evaluation</span><span class=\'text-[10px] text-emerald-400 mt-1 font-medium\'>31% Cost Reduction Audit</span></div>';">
+    </div>
+
+    <!-- Content Area -->
+    <div class="p-6 flex flex-col justify-between flex-grow">
+        <div>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">Change/Variation Order Evaluation</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                Rigorous commercial evaluation resulting in ~31% cost reduction against contractor submission.
+            </p>
+        </div>
+        <div class="text-xs text-emerald-400 pt-3 border-t border-slate-800 font-medium flex items-center gap-1.5">
+            <i class="fa-solid fa-chart-line-down text-xs"></i> High Commercial Savings Achieved
+        </div>
+    </div>
+</div>
+
+<!-- RFA / RFI / PR Tracking Card -->
+<div class="glass-card rounded-2xl border border-indigo-500/30 overflow-hidden flex flex-col justify-between">
+    <!-- Image Container -->
+    <div class="h-48 bg-slate-800 relative overflow-hidden border-b border-slate-800 group cursor-pointer">
+        <img src="09_rfi.png" 
+             alt="RFI / RFA Tracking Log" 
+             class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+             onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'w-full h-full flex flex-col items-center justify-center bg-slate-800 text-slate-400 p-4 text-center\'><i class=\'fa-solid fa-list-check text-3xl text-indigo-400 mb-2\'></i><span class=\'font-semibold text-xs text-white\'>RFI / RFA Tracking Log</span><span class=\'text-[10px] text-slate-400 mt-1\'>Click to inspect scope</span></div>';">
+    </div>
+
+    <!-- Content Area -->
+    <div class="p-6 flex flex-col justify-between flex-grow">
+        <div>
+            <h3 class="font-heading text-xl font-bold text-white mb-2">RFA / RFI / PR Tracking</h3>
+            <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                Coordination logs for Requests for Approval, Requests for Information, and Requisitions.
+            </p>
+        </div>
+        <div class="text-xs text-indigo-400 pt-3 border-t border-slate-800 font-medium">
+            Focus: Project Coordination & Control
+        </div>
+    </div>
+</div>
+        </section>
+
+        <!-- SOFTWARE & TECHNICAL TOOLS SECTION -->
+        <section id="tools" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-amber text-xs font-bold uppercase tracking-widest block mb-2">Technical Proficiency</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">Software & Engineering Tools</h2>
+                    <p class="text-slate-400 text-sm mt-3">Proficient in specialized software suites for 5D BIM, take-off, CAD, and cost administration.</p>
+                </div>
+
+                <!-- Featured Tools Image Banner (if local asset exists) -->
+                <div class="mb-12 glass-card p-4 rounded-2xl border border-slate-800 overflow-hidden text-center">
+                    <img src="images/work-samples/010_tools.png" 
+                         alt="Software and technical tools banner" 
+                         class="max-h-56 mx-auto object-contain rounded-xl"
+                         onerror="this.style.display='none';">
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    
+                    <!-- Category 1 -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
+                        <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                            <i class="fa-solid fa-ruler-combined text-brand-amber text-xl"></i>
+                            <h3 class="font-heading font-bold text-white text-lg">Quantity Take-Off / BIM</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-brand-amber text-xs"></i> <strong>PlanSwift</strong> — Digital QTO & Markups</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-brand-amber text-xs"></i> <strong>Bluebeam Revu</strong> — PDF Take-off & Measurements</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-brand-amber text-xs"></i> <strong>Glodon Cubicost (5D BIM)</strong> — Automated QTO</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 2 -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
+                        <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                            <i class="fa-solid fa-compass-drafting text-brand-cyan text-xl"></i>
+                            <h3 class="font-heading font-bold text-white text-lg">CAD & Modeling</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-brand-cyan text-xs"></i> <strong>AutoCAD</strong> — 2D Drawing Audits & Extraction</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-brand-cyan text-xs"></i> <strong>Autodesk Revit</strong> — BIM Model Measurement</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-brand-cyan text-xs"></i> <strong>SketchUp</strong> — 3D Visualization</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 3 -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
+                        <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                            <i class="fa-solid fa-calculator text-emerald-400 text-xl"></i>
+                            <h3 class="font-heading font-bold text-white text-lg">Costing & Analytics</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-emerald-400 text-xs"></i> <strong>Primus Costing</strong> — Bill of Quantities</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-emerald-400 text-xs"></i> <strong>Advanced MS Excel</strong> — Formulas & Cost Models</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-emerald-400 text-xs"></i> <strong>Excel Macros / DUPA Templates</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 4 -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-4">
+                        <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                            <i class="fa-solid fa-folder-tree text-purple-400 text-xl"></i>
+                            <h3 class="font-heading font-bold text-white text-lg">Project Management</h3>
+                        </div>
+                        <ul class="space-y-2 text-sm text-slate-300">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-purple-400 text-xs"></i> <strong>Procore</strong> — Construction Management</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-purple-400 text-xs"></i> <strong>Microsoft Office Suite</strong> — Documentation</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-caret-right text-purple-400 text-xs"></i> <strong>Google Workspace</strong> — Collaboration</li>
+                        </ul>
+                    </div>
+
+                    <!-- Category 5 -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-800 space-y-4 md:col-span-2 lg:col-span-2">
+                        <div class="flex items-center gap-3 border-b border-slate-800 pb-3">
+                            <i class="fa-solid fa-shield-halved text-amber-400 text-xl"></i>
+                            <h3 class="font-heading font-bold text-white text-lg">Safety & Quality Compliance</h3>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-300">
+                            <span class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 text-xs"></i> COSH Certified — Safety Officer 2 (SO2)</span>
+                            <span class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 text-xs"></i> Site Material Quality Auditing</span>
+                            <span class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 text-xs"></i> Specification & Technical Compliance</span>
+                            <span class="flex items-center gap-2"><i class="fa-solid fa-check text-amber-400 text-xs"></i> Submittal Control & Inspection Logs</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+       <!-- CERTIFICATES & PROFESSIONAL TRAINING SECTION -->
         <section id="certificates" class="py-20 bg-slate-900/60 border-t border-slate-800/80">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
@@ -175,3 +1046,279 @@
                 </div>
             </div>
         </section>
+
+        <!-- ENGAGEMENT MODELS SECTION -->
+        <section class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-brand-amber text-xs font-bold uppercase tracking-widest block mb-2">Collaboration</span>
+                    <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">Engagement Models</h2>
+                    <p class="text-slate-400 text-sm mt-3">Tailored service packages designed to support contractors, developers, and steel fabricators.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Model 1 -->
+                    <div class="glass-card glass-card-hover p-8 rounded-3xl border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs font-bold text-brand-amber uppercase tracking-wider mb-2">Target: Subcontractors & Bidders</div>
+                            <h3 class="font-heading text-2xl font-bold text-white mb-4">Pre-Bid Estimation</h3>
+                            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-amber text-xs mt-1"></i>
+                                    <span>BOQ, BOM & precise quantity take-offs</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-amber text-xs mt-1"></i>
+                                    <span>Pre-tender bid review & documentation</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-amber text-xs mt-1"></i>
+                                    <span>Supplier quote validation & cost benchmarking</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-center font-semibold text-xs text-white transition block">
+                            Inquire Pre-Bid Package
+                        </a>
+                    </div>
+
+                    <!-- Model 2 (Highlighted) -->
+                    <div class="glass-card glass-card-hover p-8 rounded-3xl border-2 border-brand-amber relative flex flex-col justify-between gold-border-glow">
+                        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-brand-amber text-slate-950 px-4 py-1 rounded-full text-[11px] font-extrabold uppercase tracking-wider">
+                            Popular Choice
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-brand-amber uppercase tracking-wider mb-2 mt-2">Target: General Contractors</div>
+                            <h3 class="font-heading text-2xl font-bold text-white mb-4">Active Cost Control</h3>
+                            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-amber text-xs mt-1"></i>
+                                    <span>Progress billing evaluation & certification</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-amber text-xs mt-1"></i>
+                                    <span>Change-order / variation evaluation</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-amber text-xs mt-1"></i>
+                                    <span>DUPA & rate modification tracking</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-amber text-xs mt-1"></i>
+                                    <span>Submittal monitoring & variance reports</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full py-3 rounded-xl bg-brand-amber hover:bg-brand-gold text-slate-950 font-bold text-center text-xs transition block shadow-md">
+                            Engage Cost Control
+                        </a>
+                    </div>
+
+                    <!-- Model 3 -->
+                    <div class="glass-card glass-card-hover p-8 rounded-3xl border border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="text-xs font-bold text-brand-cyan uppercase tracking-wider mb-2">Target: Developers & Steel Firms</div>
+                            <h3 class="font-heading text-2xl font-bold text-white mb-4">Full Project QS</h3>
+                            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-cyan text-xs mt-1"></i>
+                                    <span>End-to-end commercial & site quantity surveying</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-cyan text-xs mt-1"></i>
+                                    <span>BOQ audits and material site verification</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-cyan text-xs mt-1"></i>
+                                    <span>Submittal tracking & contract management</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-brand-cyan text-xs mt-1"></i>
+                                    <span>Contractor and client commercial liaison</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#contact" class="w-full py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-center font-semibold text-xs text-white transition block">
+                            Discuss Full Project Role
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & FOOTER SECTION -->
+        <section id="contact" class="py-20 bg-slate-900/90 border-t border-slate-800 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="glass-card p-8 sm:p-12 rounded-3xl border border-slate-800 relative overflow-hidden">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                        
+                        <div class="lg:col-span-7 space-y-6">
+                            <span class="text-brand-amber text-xs font-bold uppercase tracking-widest block">Let's Work Together</span>
+                            <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white">Ready to Optimize Your Construction Costs?</h2>
+                            <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                                Available for quantity surveying, estimating, cost control, structural steel QS, and construction coordination opportunities.
+                            </p>
+
+                            <div class="space-y-4 pt-2">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-brand-amber/10 text-brand-amber flex items-center justify-center text-lg">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400">Direct Email</div>
+                                        <a href="mailto:sbmasilang@gmail.com" class="text-white font-semibold hover:text-brand-amber transition">sbmasilang@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-brand-cyan/10 text-brand-cyan flex items-center justify-center text-lg">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400">Phone / WhatsApp</div>
+                                        <a href="tel:+639240445797" class="text-white font-semibold hover:text-brand-cyan transition">+63 924 044 5797</a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-center gap-4">
+                                    <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-lg">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <div class="text-xs text-slate-400">Location</div>
+                                        <span class="text-white font-semibold">Lipa City, Batangas, Philippines</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Quick Action Card -->
+                        <div class="lg:col-span-5 bg-slate-900/80 p-6 sm:p-8 rounded-2xl border border-slate-800 text-center space-y-4">
+                            <i class="fa-solid fa-paper-plane text-4xl text-brand-amber"></i>
+                            <h3 class="font-heading font-bold text-white text-xl">Direct Inquiry</h3>
+                            <p class="text-xs text-slate-400">Send a direct message or tender inquiry via your preferred email client.</p>
+                            
+                            <a href="mailto:sbmasilang@gmail.com?subject=Quantity%20Surveying%20Inquiry" class="w-full py-3.5 rounded-xl bg-brand-amber hover:bg-brand-gold text-slate-950 font-bold text-sm transition block shadow-lg shadow-brand-amber/10">
+                                Send Email Request
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mt-16 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+                    <div>
+                        <strong class="text-slate-200">Sheryl B. Masilang</strong> | Quantity Surveyor & Coordinator
+                    </div>
+                    <div>
+                        <em>Portfolio established 2026</em>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop" class="fixed bottom-6 right-6 z-40 w-12 h-12 rounded-full bg-brand-amber text-slate-950 flex items-center justify-center text-lg font-bold shadow-xl opacity-0 pointer-events-none transition-all duration-300 hover:scale-110">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- WORK SAMPLE MODAL -->
+    <div id="sampleModal" class="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md hidden items-center justify-center p-4 sm:p-6">
+        <div class="glass-card max-w-4xl w-full rounded-3xl border border-slate-800 overflow-hidden relative max-h-[90vh] flex flex-col">
+            <!-- Close button -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-slate-900/80 text-white flex items-center justify-center hover:bg-slate-800 border border-slate-700">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            
+            <div class="p-6 border-b border-slate-800">
+                <h3 id="modalTitle" class="font-heading text-xl font-bold text-white">Work Sample Preview</h3>
+            </div>
+
+            <div class="p-6 overflow-y-auto flex-grow flex flex-col items-center justify-center bg-slate-950/50">
+                <div class="w-full h-auto max-h-[50vh] flex items-center justify-center rounded-xl overflow-hidden bg-slate-900 border border-slate-800 p-2">
+                    <img id="modalImg" src="" alt="Work sample preview" class="max-h-[48vh] w-auto object-contain rounded-lg" onerror="this.style.display='none'; document.getElementById('modalFallback').classList.remove('hidden');">
+                    <div id="modalFallback" class="hidden p-8 text-center text-slate-400">
+                        <i class="fa-solid fa-file-lines text-5xl text-brand-amber mb-3"></i>
+                        <p class="text-sm text-slate-300 font-semibold">Document Artifact Sample</p>
+                        <p class="text-xs text-slate-500 mt-1">Detailed measurement sheets and calculations maintained in project archive.</p>
+                    </div>
+                </div>
+                <p id="modalDesc" class="mt-4 text-xs sm:text-sm text-slate-300 leading-relaxed text-center max-w-2xl"></p>
+            </div>
+
+            <div class="p-4 border-t border-slate-800 bg-slate-900/60 flex justify-end">
+                <button onclick="closeModal()" class="px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs transition">
+                    Close Preview
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'pointer-events-none');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Modal Functionality for Work Samples
+        function openModal(imgSrc, title, desc) {
+            const modal = document.getElementById('sampleModal');
+            const modalImg = document.getElementById('modalImg');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDesc = document.getElementById('modalDesc');
+            const modalFallback = document.getElementById('modalFallback');
+
+            modalImg.style.display = 'block';
+            modalFallback.classList.add('hidden');
+            
+            modalImg.src = imgSrc;
+            modalTitle.textContent = title;
+            modalDesc.textContent = desc;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('sampleModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close Modal on Esc key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+    </script>
+</body>
+</html>
